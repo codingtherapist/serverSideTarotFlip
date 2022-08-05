@@ -33,9 +33,8 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
-const PORT = 1113
+const PORT = 1111
 
-<<<<<<< HEAD
 const majorArcana = { //setting up all the cards within an object (look at rappers-api for where I got inspiration from)
     1:{ //I initally used the card's name for this, but then realized I'd have to do a lot of math to get the place in the object, so I decided just to number them so later the Math.random immediately references a card 
         cardFront: "The Fool",
@@ -303,62 +302,20 @@ const majorArcana = { //setting up all the cards within an object (look at rappe
     },
 }
 
-=======
-const majorArcana = {
-    1:{
-        cardFront: "The Fool",
-        cardBack: "Beginnings, innocence, spontaneity, a free spirit"
-    },
-    2: {
-        cardFront: "The Fool Reversed",
-        cardBack:   "Holding back, recklessness, risk-taking"
-    },
-    3: {
-        cardFront: "The Magician",
-        cardBack:   "Manifestation, resourcefulness, power, inspired action"
-    },
-    4: {
-        cardFront: "The Magician Reversed",
-        cardBack: "Manipulation, poor planning, untapped talents"
-    }, 
-    5: { 
-        cardFront: "The High Priestess",
-        cardBack: "Intuition, sacred knowledge, divine feminine, the subconscious mind"
-    },
-    6:{
-        cardFront: "The High Priestess Reversed",
-        cardBack: "Secrets, disconnected from intuition, withdrawal and silence"
-    },
-    7:{
-        cardFront: "The Empress",
-        cardBack: "Creative block, dependence on others"
-    }
-}
->>>>>>> dda64577218a79f2b347b83c4895268bc6d8fc6d
 
 // returning ejs/html to the root
 app.get('/', async (request, response) => {
     try {
-<<<<<<< HEAD
         response.sendFile( __dirname + "/public/index.html")//I decided I didn't need ejs because we're not looping through the objects and or array in a way that needs methods or whatever so html is good enough and kept me from getting confused
-=======
-        response.sendFile( __dirname + "/public/index.html")
->>>>>>> dda64577218a79f2b347b83c4895268bc6d8fc6d
     } catch (error) {
         response.status(500).send({message: error.message})
     }
 }) 
 
 app.get('/newCard', async (request, response) =>{
-<<<<<<< HEAD
     let math = Math.ceil( Math.random() * 44) // honestly the same mechanic as my coin flip to get a random number 1-44 and send back as json
     try { 
         response.json(majorArcana[math]) //this is the heavy lifter using the random number generator, if there is a thing that is essentially withing the object majorArcana and the result of the math, send it back to the main.js as JSON.  If I had kept the card names, it would have had to read something like majorArcana[variable] variable == "The Moon" to be able to respond. Which would have required setting up whatever variable AND tying that varaible to the math. I preferred to skip that step, though it's probably not best practice (feels very baddie and I will not apologize). 
-=======
-    let math = Math.ceil( Math.random() * 7)
-    try { 
-        response.json(majorArcana[math])
->>>>>>> dda64577218a79f2b347b83c4895268bc6d8fc6d
     } catch (error) {
         response.status(500).send({message: error.message})
     }
