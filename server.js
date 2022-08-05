@@ -33,7 +33,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
-const PORT = 1111
+const PORT = 1113
 
 const majorArcana = { //setting up all the cards within an object (look at rappers-api for where I got inspiration from)
     1:{ //I initally used the card's name for this, but then realized I'd have to do a lot of math to get the place in the object, so I decided just to number them so later the Math.random immediately references a card 
