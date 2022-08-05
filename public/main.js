@@ -1,14 +1,10 @@
 const card = document.getElementById('card')
 const button = document.getElementById('button')
-<<<<<<< HEAD
 const image = document.querySelector("img")
-=======
->>>>>>> dda64577218a79f2b347b83c4895268bc6d8fc6d
 
 card.addEventListener('click', flipCard)
 button.addEventListener('click', newCard)
 
-<<<<<<< HEAD
 let frontText = "A card from the major arcana" //this matches the text in HTML, but sets it as a variable so we can reassign it
 let backText = "A description of that card's meaning" // ditto
 
@@ -37,22 +33,4 @@ function newCard(){
         .catch (error => {
             console.log(`error ${error}`)
         })
-=======
-let frontText = "a card from the major arcana"
-let backText = "description of that card's meaning"
-
-function flipCard(){
-    card.classList.toggle('flipCard')
-    document.getElementById('frontText').innerText = frontText
-    document.getElementById('backText').innerText = backText
-} 
-function newCard(){
-    fetch ("/newCard")
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data);
-            frontText = data.cardFront
-            backText = data.cardBack
-        });
->>>>>>> dda64577218a79f2b347b83c4895268bc6d8fc6d
 }
