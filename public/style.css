@@ -10,13 +10,12 @@
 
 body {
     background: white;
-    background-image: url("img/tarotbackground.png")
-
+    background-image: url("img/tarotbackground.png");
+height: 100vh;
 
 }
 
 .intro{
-  
     text-align: center;
 
    
@@ -24,12 +23,11 @@ body {
 }
 
 .mainContainer{
-    position: absolute;
+   position: relative;
     text-align: center;
     width: 250px;
     height: 375px;
     border-radius: 25px;
-    background: none;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
