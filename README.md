@@ -1,8 +1,7 @@
 # flip_flip
 
 A simple card flip project to practice serverside and a client side java script. 
-
-<img src="img/gifflip.gif" alt="screen recording of tarot flip website">
+![screen recording of tarot flip website](public/img/gifflip.gif)
 
 
 ### How it's Made
