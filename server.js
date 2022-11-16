@@ -1,39 +1,8 @@
-// 1 initialize npm and install all dependencies
-            //              command is npm init
-// express, dotenv, cors, mongodb, ejs, nodemon (--save -dev)
-            // command is npm install express
-// 2 require dependencies in server dependencies
-            // (const express = require express)
-// 3 delare variables
-        //
-// create gitignore file and push to github
-
-// 4 connect to MongoDB - add connection string to .env file
-
-// 5 create port
-// test Mongo and Port Connection
-
-// 6 set middleware
-
-// 7 create gitignore file
-
-// 8 create public and views folders add main.js and style.css to public and index.ejs to views
-
-// 9 add content to main.js, style.css, and index.ejs
-
-//10 create heroku repo (config vars) for env 
-//heroku login
-//heroku create app
-//echo "web: node server.js> Procfile
-// git add . 
-// git commit -m "changes"
-// git push heroku main
-
 const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
-const PORT = 1113
+
 
 const majorArcana = { //setting up all the cards within an object (look at rappers-api for where I got inspiration from)
     1:{ //I initally used the card's name for this, but then realized I'd have to do a lot of math to get the place in the object, so I decided just to number them so later the Math.random immediately references a card 
