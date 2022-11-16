@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 require('dotenv').config()
+const PORT = 1111
 
 
 const majorArcana = { //setting up all the cards within an object (look at rappers-api for where I got inspiration from)
@@ -300,6 +301,6 @@ app.use(cors() ) //prevent cross object requests
 
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server is running on port ${PORT} yay` )
+    console.log(`Server is running yay` )
 })
 
