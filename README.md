@@ -2,9 +2,7 @@
 
 A simple card flip project to practice serverside and a client side java script. 
 
-<img width="336" alt="Screen Shot of card reading 'a card of the major arcana'" src="https://user-images.githubusercontent.com/102367926/182604522-37c97494-7129-45e0-b82a-e20acebdc584.png">.  <img width="330" alt="Screen of card reading 'a description of the card'" src="https://user-images.githubusercontent.com/102367926/182604573-dd1145f7-b8c9-4f4b-9bac-f267dfcc2c0d.png">.
-
-<img width = 330 alt = "screenshot showing card name and card image" src="https://user-images.githubusercontent.com/102367926/183090213-0f0a1115-efbf-469b-81e2-4693ddf3a4be.png">. <img width = 330 alt = "screenshot showing back of card reading 'Sudden change, upheaval, chaos, revelation, awakening'" src ="https://user-images.githubusercontent.com/102367926/183090247-ebd4ac86-c8fa-4de6-84a5-54fac3697bd9.png">.
+<img src="img/gifflip.gif" alt="screen recording of tarot flip website">
 
 
 ### How it's Made
