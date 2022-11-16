@@ -1,9 +1,9 @@
 # Tarot Flip of the Day
 
-A simple card flip project using serverside functions and client side JavaScript.<br> 
+A simple card flip project using serverside functions and client side JavaScript.<br> <br>
 ![screen recording of tarot flip website](public/img/gifflip.gif)
 
-
+Link to project: https://tarotflip.cyclic.app/<Br><br>
 ## How it's Made
 Tech used: HTML, CSS, Javascript, Node.js, Express
 
